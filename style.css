@@ -1,0 +1,375 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;700&family=Roboto:wght@300;400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    color: #333;
+    background-color: #f8f8f8;
+}
+
+/* Barra Superior */
+.top-bar {
+    background-color: #000;
+    color: #fff;
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    padding: 8px 20px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    text-transform: uppercase;
+}
+
+.top-bar .athlete-club {
+    position: absolute;
+    right: 20px;
+}
+
+/* Navegación */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background: transparent;
+    position: absolute;
+    width: 100%;
+    top: 34px;
+    z-index: 10;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #333;
+    font-size: 0.85rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin-right: 25px;
+    text-transform: uppercase;
+}
+
+.nav-links i {
+    font-size: 0.6rem;
+    margin-left: 5px;
+}
+
+.logo h1 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.8rem;
+    letter-spacing: 5px;
+    font-weight: 500;
+    color: #333;
+}
+
+.nav-icons {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.nav-icons .region {
+    font-size: 0.8rem;
+    font-weight: 700;
+    margin-right: 10px;
+}
+
+.nav-icons a {
+    color: #333;
+    font-size: 1.2rem;
+    text-decoration: none;
+}
+
+/* Sección Hero */
+.hero {
+    height: 100vh;
+    /* Imagen por defecto, puede ser reemplazada con la generada */
+    background-image: url('https://images.unsplash.com/photo-1518310383802-640c2de311b2?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+}
+
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; width: 100%; height: 100%;
+    background: rgba(255,255,255,0.2);
+}
+
+.hero-content {
+    background: rgba(255, 255, 255, 0.85);
+    padding: 40px 60px;
+    border-radius: 10px;
+    position: relative;
+    z-index: 1;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+.hero .subtitle {
+    font-size: 0.9rem;
+    letter-spacing: 3px;
+    font-weight: 700;
+    color: #555;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+}
+
+.hero .title {
+    font-family: 'Oswald', sans-serif;
+    font-size: 5rem;
+    font-weight: 700;
+    color: #43645b; 
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    line-height: 1;
+}
+
+.hero .btn {
+    display: inline-block;
+    background-color: #43645b;
+    color: #fff;
+    text-decoration: none;
+    padding: 15px 40px;
+    font-size: 0.9rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    border-radius: 30px;
+    transition: background 0.3s;
+}
+
+.hero .btn:hover {
+    background-color: #2c423c;
+}
+
+/* Sección Productos / Modelos */
+.products {
+    padding: 60px 40px;
+    text-align: center;
+    background-color: #fff;
+}
+
+.section-title {
+    font-family: 'Oswald', sans-serif;
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 40px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.product-card {
+    background-color: #f8f8f8;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+}
+
+.product-image img {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+    display: block;
+}
+
+.product-info {
+    padding: 20px;
+    text-align: left;
+}
+
+.product-info h3 {
+    font-size: 1.1rem;
+    color: #333;
+    margin-bottom: 10px;
+    font-weight: 500;
+}
+
+.product-info .price {
+    font-size: 1.2rem;
+    color: #43645b;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.btn-buy {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    transition: background-color 0.3s;
+}
+
+.btn-buy:hover {
+    background-color: #43645b;
+}
+
+/* Sección de Información */
+.info-section {
+    background-color: #111;
+    color: #fff;
+    padding: 30px 40px;
+    text-align: left;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.info-text h2 {
+    font-size: 1.1rem;
+    font-weight: 400;
+    margin-bottom: 5px;
+}
+
+.info-text p {
+    font-size: 0.9rem;
+    color: #ccc;
+}
+
+/* Botón Flotante de WhatsApp */
+.whatsapp-btn {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    background-color: #25d366;
+    color: white;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 35px;
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.2);
+    z-index: 100;
+    text-decoration: none;
+    transition: transform 0.3s;
+}
+
+.whatsapp-btn:hover {
+    transform: scale(1.1);
+}
+
+footer {
+    background: #000;
+    color: #666;
+    text-align: center;
+    padding: 20px;
+    font-size: 0.8rem;
+}
+
+/* Responsividad para Tablets y Móviles */
+@media screen and (max-width: 900px) {
+    .navbar {
+        flex-direction: column;
+        gap: 15px;
+        top: 40px;
+    }
+    .nav-links a {
+        margin: 0 10px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .top-bar {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 5px;
+        font-size: 0.65rem;
+    }
+    
+    .top-bar .athlete-club {
+        position: static;
+    }
+    
+    .navbar {
+        padding: 15px 20px;
+        background: rgba(255, 255, 255, 0.95);
+        position: relative;
+        top: 0;
+    }
+    
+    .nav-links {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+    }
+    
+    .nav-links a {
+        margin: 0;
+        font-size: 0.75rem;
+    }
+    
+    .hero {
+        height: auto;
+        min-height: 80vh;
+        padding-top: 40px;
+    }
+    
+    .hero .title {
+        font-size: 3.5rem;
+    }
+    
+    .hero-content {
+        padding: 30px 20px;
+        width: 90%;
+    }
+    
+    .info-section {
+        flex-direction: column;
+        text-align: center;
+        gap: 20px;
+        padding: 30px 20px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .hero .title {
+        font-size: 2.5rem;
+    }
+    
+    .nav-links {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .hero-content {
+        padding: 25px 15px;
+    }
+    
+    .whatsapp-btn {
+        width: 50px;
+        height: 50px;
+        font-size: 28px;
+        bottom: 20px;
+        right: 20px;
+    }
+}
