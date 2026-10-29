@@ -1,4 +1,4 @@
-﻿?<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="es" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
@@ -29,8 +29,8 @@
                     },
                     animation: {
                         'bounce-slow': 'bounce 3s infinite',
-                        'float': 'float 4s ease-iñout infinite',
-                        'wiggle': 'wiggle 1s ease-iñout infinite',
+                        'float': 'float 4s ease-in-out infinite',
+                        'wiggle': 'wiggle 1s ease-in-out infinite',
                     },
                     keyframes: {
                         float: {
@@ -63,7 +63,7 @@
             transform: translateY(99%);
         }
         
-        .wave-bottomásvg {
+        .wave-bottom svg {
             position: relative;
             display: block;
             width: calc(100% + 1.3px);
@@ -107,7 +107,7 @@
                 <!-- Logo -->
                 <div class="flex-shrink-0 flex items-center gap-2 cursor-pointer" onclick="window.scrollTo(0,0)">
                     <div class="w-12 h-12 bg-white rounded-full p-1 shadow-lg border-2 border-avioPurple flex items-center justify-center overflow-hidden">
-                        <img src="assets/logo.png" alt="Avio Logo" class="w-full h-auto object-contain">
+                        <img src="./logo.png" alt="Avio Logo" class="w-full h-auto object-contain">
                     </div>
                     <span class="text-3xl font-bold text-white tracking-wide" id="navTitle" style="text-shadow: 2px 2px 0 #5A189A;">Avio</span>
                 </div>
@@ -118,12 +118,12 @@
                     <button id="btnParaNinos" onclick="switchToKids()" class="hidden bg-avioYellow hover:bg-yellow-300 text-avioPurple px-4 py-2 rounded-full font-bold shadow-lg transform transition hover:scale-105 border-2 border-white text-sm flex items-center gap-2">🎒 Versión Niños</button>
                 </div>
                 <div class="flex space-x-4 md:space-x-6 items-center">
-                    <a href="#ofrecemos" class="hidden md:inline text-white font-semibold hover:text-avioYellow transition-colors text-lg" style="text-shadow: 1px 1px 0 #5A189A;">¡Qué ofrecemos?</a>
+                    <a href="#ofrecemos" class="hidden md:inline text-white font-semibold hover:text-avioYellow transition-colors text-lg" style="text-shadow: 1px 1px 0 #5A189A;">¿Qué ofrecemos?</a>
                     <a href="#menu" class="hidden md:inline text-white font-semibold hover:text-avioYellow transition-colors text-lg" style="text-shadow: 1px 1px 0 #5A189A;">menú</a>
-                    <a href="#como-funciona" class="hidden md:inline text-white font-semibold hover:text-avioYellow transition-colors text-lg" style="text-shadow: 1px 1px 0 #5A189A;">¡Cómo funciona?</a>
+                    <a href="#como-funciona" class="hidden md:inline text-white font-semibold hover:text-avioYellow transition-colors text-lg" style="text-shadow: 1px 1px 0 #5A189A;">¿Cómo funciona?</a>
                     
                     <!-- Bot¡n Carrito -->
-                    <buttoñonclick="toggleCart()" class="relative p-3 bg-white rounded-full shadow-lg text-avioPurple hover:bg-gray-100 transition transform hover:scale-105 border-2 border-avioPurple">
+                    <button onclick="toggleCart()" class="relative p-3 bg-white rounded-full shadow-lg text-avioPurple hover:bg-gray-100 transition transform hover:scale-105 border-2 border-avioPurple">
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-cart3" viewBox="0 0 16 16">
                             <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .49.598l-1 5a.5.5 0 0 1-.465.401l-9.397.472L4.415 11H13a.5.5 0 0 1 0 1H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l.84 4.479 9.144-.459L13.89 4H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
                         </svg>
@@ -170,7 +170,7 @@
                 <!-- Imagen / Mascota -->
                 <div class="relative flex justify-center mt-10 md:mt-0">
                     <div class="absolute inset-0 bg-avioYellow rounded-full w-64 h-64 md:w-[450px] md:h-[450px] m-auto blur-2xl opacity-40 animate-pulse"></div>
-                    <img src="assets/mascota.jpg" alt="Mascota Avio" class="relative z-10 w-64 h-64 md:w-[450px] md:h-[450px] object-cover rounded-full border-8 border-white shadow-2xl animate-float">
+                    <img src="./mascota.jpg" alt="Mascota Avio" class="relative z-10 w-64 h-64 md:w-[450px] md:h-[450px] object-cover rounded-full border-8 border-white shadow-2xl animate-float">
                     
                     <!-- Badge de precio -->
                     <div class="absolute bottom-4 -right-4 md:bottom-10 md:right-0 bg-avioYellow text-avioPurple w-24 h-24 md:w-32 md:h-32 rounded-full flex flex-col items-center justify-center font-bold shadow-xl border-4 border-white transform rotate-12 z-20 hover:animate-wiggle cursor-pointer">
@@ -188,11 +188,11 @@
         </div>
     </section>
 
-    <!-- 2. ¡Qué ofrecemos? (Cat¡logo Interactivo) -->
+    <!-- 2. ¿Qué ofrecemos? (Cat¡logo Interactivo) -->
     <section id="ofrecemos" class="py-20 bg-white relative">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-16">
-                <h2 class="text-4xl md:text-5xl font-bold text-avioPurple mb-4">¡Qué hay en la caja?</h2>
+                <h2 class="text-4xl md:text-5xl font-bold text-avioPurple mb-4">¿Qué hay en la caja?</h2>
                 <p class="text-xl text-gray-600 max-w-2xl mx-auto mb-4">Haz clic en cada Categoría para elegir los productos y armar tu lonchera ideal. <b>¡4 elementos por solo $1.00!</b></p>
             </div>
 
@@ -253,11 +253,11 @@
     </section>
 
     <!-- Modal de Productos (Categorías) -->
-    <div id="categoryModal" class="fixed inset-0 bg-black/60 z-[60] hidden flex items-center justify-center p-4 backdrop-blur-sm transitioñopacity">
+    <div id="categoryModal" class="fixed inset-0 bg-black/60 z-[60] hidden flex items-center justify-center p-4 backdrop-blur-sm transition-opacity">
         <div class="bg-white rounded-3xl w-full max-w-xl overflow-hidden shadow-2xl relative flex flex-col max-h-[85vh] animate-[float_0.3s_ease-out_forwards]">
             <!-- Bot¡n Cerrar -->
-            <buttoñonclick="closeCategoryModal()" class="absolute top-4 right-4 bg-white hover:bg-gray-200 text-gray-800 rounded-full w-10 h-10 flex items-center justify-center font-bold shadow-md z-10 transition-colors">
-                ?
+            <button onclick="closeCategoryModal()" class="absolute top-4 right-4 bg-white hover:bg-gray-200 text-gray-800 rounded-full w-10 h-10 flex items-center justify-center font-bold shadow-md z-10 transition-colors">
+                ×
             </button>
             
             <!-- Cabecera -->
@@ -277,21 +277,21 @@
             <!-- Pie modal -->
             <div class="p-4 bg-white border-t border-gray-100 flex justify-between items-center">
                 <span class="text-gray-500 font-medium text-sm">Los 4 elementos forman 1 lonchera ($1.00)</span>
-                <buttoñonclick="closeCategoryModal()" class="bg-gray-200 hover:bg-gray-300 text-gray-700 px-6 py-2 rounded-full font-bold">Hecho</button>
+                <button onclick="closeCategoryModal()" class="bg-gray-200 hover:bg-gray-300 text-gray-700 px-6 py-2 rounded-full font-bold">Hecho</button>
             </div>
         </div>
     </div>
 
     <!-- Drawer del Carrito -->
-    <div id="cartOverlay" onclick="toggleCart()" class="fixed inset-0 bg-black/50 z-[60] hidden backdrop-blur-sm transitioñopacity"></div>
-    <div id="cartDrawer" class="fixed top-0 right-0 w-full md:w-[450px] h-full bg-white z-[70] shadow-2xl transform translate-x-full transition-transform duration-300 ease-iñout flex flex-col">
+    <div id="cartOverlay" onclick="toggleCart()" class="fixed inset-0 bg-black/50 z-[60] hidden backdrop-blur-sm transition-opacity"></div>
+    <div id="cartDrawer" class="fixed top-0 right-0 w-full md:w-[450px] h-full bg-white z-[70] shadow-2xl transform translate-x-full transition-transform duration-300 ease-in-out flex flex-col">
         
         <div class="p-6 bg-avioPurple text-white flex justify-between items-center shadow-md">
             <h3 class="text-3xl font-bold flex items-center gap-3">
                 🎉 Tu Carrito
             </h3>
-            <buttoñonclick="toggleCart()" class="hover:text-avioYellow text-white w-10 h-10 rounded-full bg-white/10 flex items-center justify-center text-xl transition-colors">
-                ?
+            <button onclick="toggleCart()" class="hover:text-avioYellow text-white w-10 h-10 rounded-full bg-white/10 flex items-center justify-center text-xl transition-colors">
+                ×
             </button>
         </div>
         
@@ -304,7 +304,7 @@
                 <span class="text-6xl mb-4">🚀</span>
                 <h4 class="text-2xl font-bold text-gray-700 mb-2">¡Tu lonchera está vacía!</h4>
                 <p>Agrega deliciosos productos desde nuestras Categorías.</p>
-                <buttoñonclick="toggleCart()" class="mt-6 bg-avioYellow hover:bg-yellow-300 text-avioPurple px-6 py-2 rounded-full font-bold shadow-md transition-all">Explorar productos</button>
+                <button onclick="toggleCart()" class="mt-6 bg-avioYellow hover:bg-yellow-300 text-avioPurple px-6 py-2 rounded-full font-bold shadow-md transition-all">Explorar productos</button>
             </div>
         </div>
         
@@ -313,7 +313,7 @@
                 <span class="text-xl font-bold text-gray-700">Total a pagar:</span>
                 <span id="cartTotal" class="text-4xl font-bold text-avioGreen">$0.00</span>
             </div>
-            <buttoñonclick="checkoutWhatsApp()" class="w-full bg-avioGreen hover:bg-avioGreenDark text-white py-4 rounded-full font-bold text-xl shadow-lg transition-transform hover:-translate-y-1 flex items-center justify-center gap-3">
+            <button onclick="checkoutWhatsApp()" class="w-full bg-avioGreen hover:bg-avioGreenDark text-white py-4 rounded-full font-bold text-xl shadow-lg transition-transform hover:-translate-y-1 flex items-center justify-center gap-3">
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-whatsapp" viewBox="0 0 16 16">
                     <path d="M13.601 2.326A7.854 7.854 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.933 7.933 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.898 7.898 0 0 0 13.6 2.326zM7.994 14.521a6.573 6.573 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.557 6.557 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592zm3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.729.729 0 0 0-.529.247c-.182.198-.691.677-.691 1.654 0 .977.71 1.916.81 2.049.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232z"/>
                 </svg>
@@ -329,7 +329,7 @@
             <div class="flex flex-col md:flex-row justify-between items-end mb-12">
                 <div class="max-w-2xl">
                     <h2 class="text-4xl md:text-5xl font-bold text-avioPurple mb-4">La magia de las Cajas Sorpresa</h2>
-                    <p class="text-xl text-gray-600">¡Cada día es una nueva aventura! Nuestras cajas vienen decoradas con sus personajes y pel¡culas favoritas.</p>
+                    <p class="text-xl text-gray-600">¡Cada día es una nueva aventura! Nuestras cajas vienen decoradas con sus personajes y películas favoritas.</p>
                 </div>
                 <div class="hidden md:block text-5xl animate-bounce-slow">
                     🎉?
@@ -342,7 +342,7 @@
                         Superhéroes y Aventuras
                     </div>
                     <div class="p-6">
-                        <p class="text-gray-600 font-medium">Sus héroes favoritos los acompa¡an a la hora del recreo.</p>
+                        <p class="text-gray-600 font-medium">Sus héroes favoritos los acompañan a la hora del recreo.</p>
                     </div>
                 </div>
 
@@ -388,11 +388,11 @@
 
             <!-- Controles de días (Tabs) -->
             <div class="flex flex-wrap justify-center gap-3 mb-10" id="menu-tabs">
-                <buttoñonclick="changeMenu('lunes')" id="btn-lunes" class="menu-tab-btn bg-avioPurple text-white px-6 py-3 rounded-full font-bold text-lg shadow-md hover:-translate-y-1 transition-transform border-4 border-white">Lunes</button>
-                <buttoñonclick="changeMenu('martes')" id="btn-martes" class="menu-tab-btn bg-white text-avioPurple px-6 py-3 rounded-full font-bold text-lg shadow-md hover:-translate-y-1 transition-transform border-4 border-transparent hover:border-white">Martes</button>
-                <buttoñonclick="changeMenu('miercoles')" id="btn-miercoles" class="menu-tab-btn bg-white text-avioPurple px-6 py-3 rounded-full font-bold text-lg shadow-md hover:-translate-y-1 transition-transform border-4 border-transparent hover:border-white">Miércoles</button>
-                <buttoñonclick="changeMenu('jueves')" id="btn-jueves" class="menu-tab-btn bg-white text-avioPurple px-6 py-3 rounded-full font-bold text-lg shadow-md hover:-translate-y-1 transition-transform border-4 border-transparent hover:border-white">Jueves</button>
-                <buttoñonclick="changeMenu('viernes')" id="btn-viernes" class="menu-tab-btn bg-white text-avioPurple px-6 py-3 rounded-full font-bold text-lg shadow-md hover:-translate-y-1 transition-transform border-4 border-transparent hover:border-white">Viernes</button>
+                <button onclick="changeMenu('lunes')" id="btn-lunes" class="menu-tab-btn bg-avioPurple text-white px-6 py-3 rounded-full font-bold text-lg shadow-md hover:-translate-y-1 transition-transform border-4 border-white">Lunes</button>
+                <button onclick="changeMenu('martes')" id="btn-martes" class="menu-tab-btn bg-white text-avioPurple px-6 py-3 rounded-full font-bold text-lg shadow-md hover:-translate-y-1 transition-transform border-4 border-transparent hover:border-white">Martes</button>
+                <button onclick="changeMenu('miercoles')" id="btn-miercoles" class="menu-tab-btn bg-white text-avioPurple px-6 py-3 rounded-full font-bold text-lg shadow-md hover:-translate-y-1 transition-transform border-4 border-transparent hover:border-white">Miércoles</button>
+                <button onclick="changeMenu('jueves')" id="btn-jueves" class="menu-tab-btn bg-white text-avioPurple px-6 py-3 rounded-full font-bold text-lg shadow-md hover:-translate-y-1 transition-transform border-4 border-transparent hover:border-white">Jueves</button>
+                <button onclick="changeMenu('viernes')" id="btn-viernes" class="menu-tab-btn bg-white text-avioPurple px-6 py-3 rounded-full font-bold text-lg shadow-md hover:-translate-y-1 transition-transform border-4 border-transparent hover:border-white">Viernes</button>
             </div>
 
             <!-- Contenido del menú Activo -->
@@ -400,7 +400,7 @@
                 <!-- Imagen -->
                 <div class="w-full lg:w-1/2 relative">
                     <div class="absolute inset-0 bg-white rounded-3xl transform rotate-3 scale-105 opacity-80 shadow-lg"></div>
-                    <img id="menu-image" src="assets/personaje-lunes.png" alt="Personaje de Avio" class="relative z-10 w-full h-auto aspect-square object-cover rounded-3xl shadow-xl border-8 border-white transitioñopacity duration-300">
+                    <img id="menu-image" src="./personaje-lunes.png" alt="Personaje de Avio" class="relative z-10 w-full h-auto aspect-square object-cover rounded-3xl shadow-xl border-8 border-white transition-opacity duration-300">
                 </div>
                 
                 <!-- Info -->
@@ -421,10 +421,10 @@
         </div>
     </section>
 
-    <!-- 5. ¡Cómo funciona? -->
+    <!-- 5. ¿Cómo funciona? -->
     <section id="como-funciona" class="py-24 bg-white">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <h2 class="text-4xl md:text-5xl font-bold text-center text-avioPurple mb-16">¡Cómo funciona?</h2>
+            <h2 class="text-4xl md:text-5xl font-bold text-center text-avioPurple mb-16">¿Cómo funciona?</h2>
             
             <div class="grid grid-cols-1 md:grid-cols-4 gap-8 relative">
                 <div class="hidden md:block absolute top-1/2 left-0 w-full h-2 bg-gray-100 -translate-y-1/2 z-0 rounded-full"></div>
@@ -444,7 +444,7 @@
                 <div class="relative z-10 text-center group">
                     <div class="w-24 h-24 mx-auto bg-blue-400 text-white rounded-full flex items-center justify-center text-3xl font-bold shadow-lg border-4 border-white group-hover:scale-110 transition-transform mb-4">3</div>
                     <h3 class="text-xl font-bold text-gray-800 mb-2">Realiza tu pedido</h3>
-                    <p class="text-gray-600 font-medium text-sm">Se env¡a directo a WhatsApp ¡Es súper fácil!!</p>
+                    <p class="text-gray-600 font-medium text-sm">Se envía directo a WhatsApp ¡Es súper fácil!!</p>
                 </div>
 
                 <div class="relative z-10 text-center group">
@@ -464,7 +464,7 @@
                 <div class="w-full md:w-1/3 flex justify-center">
                     <div class="relative">
                         <div class="absolute inset-0 bg-avioYellow rounded-full blur-xl opacity-30"></div>
-                        <img src="assets/mascota.jpg" alt="Mascota de Avio" class="relative z-10 w-64 h-64 object-cover rounded-full border-4 border-avioGreen shadow-2xl animate-float">
+                        <img src="./mascota.jpg" alt="Mascota de Avio" class="relative z-10 w-64 h-64 object-cover rounded-full border-4 border-avioGreen shadow-2xl animate-float">
                         <div class="absolute -top-4 -right-4 bg-white text-avioPurple text-sm font-bold px-4 py-2 rounded-2xl shadow-lg transform rotate-6 border-2 border-avioPurple z-20">
                             ¡Hola amiguitos! 🎉
                         </div>
@@ -473,10 +473,10 @@
                 <div class="w-full md:w-2/3 text-center md:text-left">
                     <h2 class="text-4xl md:text-5xl font-bold text-avioYellow mb-6">Nuestra Historia</h2>
                     <p class="text-xl leading-relaxed font-medium mb-6">
-                        La idea de <span class="font-bold text-white">Avio</span> naci¡ de Rub¡ Tulcán, actualmente docente. Al ver la necesidad de opciones más sanas, divertidas y accesibles, surgi¡ este proyecto.
+                        La idea de <span class="font-bold text-white">Avio</span> nació de Rubí Tulcán, actualmente docente. Al ver la necesidad de opciones más sanas, divertidas y accesibles, surgió este proyecto.
                     </p>
                     <p class="text-xl leading-relaxed font-medium">
-                        Hoy, el emprendimiento es desarrollado con mucho cari¡o por un grupo de amigos en Tulcán que buscañofrecer una alternativa diferente de loncheras para niños. ¡Queremos verlos crecer fuertes y felices!
+                        Hoy, el emprendimiento es desarrollado con mucho cariño por un grupo de amigos en Tulcán que buscan ofrecer una alternativa diferente de loncheras para niños. ¡Queremos verlos crecer fuertes y felices!
                     </p>
                 </div>
             </div>
@@ -488,7 +488,7 @@
         <!-- Barra Clickable -->
         <div onclick="document.getElementById('adultos-content').classList.toggle('hidden')" class="w-full py-8 cursor-pointer hover:bg-black transition-colors flex justify-center items-center group">
             <h2 class="text-2xl md:text-4xl font-bold text-white flex items-center gap-4">
-                🎉 ¡¿Buscas algo para ti?? <span class="text-avioYellow">Avio para Adultos</span>
+                🎉 ¿Buscas algo para ti? <span class="text-avioYellow">Avio para Adultos</span>
                 <span class="text-sm bg-white/10 px-4 py-2 rounded-full group-hover:bg-avioYellow group-hover:text-gray-900 transition-colors">Ver menú ?</span>
             </h2>
         </div>
@@ -499,46 +499,46 @@
                 <!-- Im¡genes de productos Avio (bolso + vaso) -->
                 <div class="w-full md:w-5/12 flex flex-col gap-6">
                     <div class="relative rounded-[2rem] overflow-hidden shadow-2xl bg-white">
-                        <img src="assets/bolso-lonchera.png" alt="Lonchera Ejecutiva Avio" class="w-full h-auto object-contain" style="max-height:320px;">
+                        <img src="./bolso-lonchera.png" alt="Lonchera Ejecutiva Avio" class="w-full h-auto object-contain" style="max-height:320px;">
                     </div>
                     <div class="relative rounded-[2rem] overflow-hidden shadow-2xl bg-white">
-                        <img src="assets/vaso-frappe.png" alt="Caf¡ Helado Frapp¡ Avio" class="w-full h-auto object-contain" style="max-height:320px;">
+                        <img src="./vaso-frappe.png" alt="Café Helado Frappé Avio" class="w-full h-auto object-contain" style="max-height:320px;">
                     </div>
                 </div>
 
                 <!-- Opciones del menú -->
                 <div class="w-full md:w-7/12">
                     <h3 class="text-4xl md:text-5xl font-bold text-gray-900 mb-4 font-sans">menú Ejecutivo</h3>
-                    <p class="text-xl text-gray-600 mb-8">Nuestras loncheras nutritivas y bebidas dise¡adas especialmente para recargarte en tu jornada.</p>
+                    <p class="text-xl text-gray-600 mb-8">Nuestras loncheras nutritivas y bebidas diseñadas especialmente para recargarte en tu jornada.</p>
 
                     <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
-                        <!-- Producto A1: Caf¡ Helado / Frapp¡ -->
+                        <!-- Producto A1: Café Helado / Frappé -->
                         <div class="bg-white p-5 rounded-2xl border border-gray-100 shadow-md flex flex-col hover:-translate-y-1 transition-transform">
                             <div class="mb-4 rounded-xl overflow-hidden bg-gray-50 flex items-center justify-center" style="height:160px;">
-                                <img src="assets/vaso-frappe.png" alt="Caf¡ Helado / Frapp¡ Avio" class="h-full w-auto object-contain">
+                                <img src="./vaso-frappe.png" alt="Café Helado / Frappé Avio" class="h-full w-auto object-contain">
                             </div>
                             <div class="mb-3">
-                                <h4 class="font-bold text-gray-800 text-xl">Caf¡ Helado / Frapp¡</h4>
-                                <p class="text-sm text-gray-500">Estilo cafeter¡a, vaso grande</p>
+                                <h4 class="font-bold text-gray-800 text-xl">Café Helado / Frappé</h4>
+                                <p class="text-sm text-gray-500">Estilo cafetería, vaso grande</p>
                             </div>
                             <div class="mt-auto flex justify-between items-center border-t border-gray-100 pt-4">
                                 <span class="font-bold text-avioPurple text-2xl">$3.50</span>
-                                <buttoñonclick="addToCart('ad1', 'Caf¡ Helado/Frapp¡', 3.50)" class="bg-gray-900 hover:bg-black text-white px-5 py-2 rounded-full font-bold shadow-lg flex items-center gap-2 transition-colors">A¡AñAñ ++</button>
+                                <button onclick="addToCart('ad1', 'Café Helado/Frappé', 3.50)" class="bg-gray-900 hover:bg-black text-white px-5 py-2 rounded-full font-bold shadow-lg flex items-center gap-2 transition-colors">Añadir +</button>
                             </div>
                         </div>
 
                         <!-- Producto A2: Lonchera Ejecutiva -->
                         <div class="bg-white p-5 rounded-2xl border border-gray-100 shadow-md flex flex-col hover:-translate-y-1 transition-transform">
                             <div class="mb-4 rounded-xl overflow-hidden bg-gray-50 flex items-center justify-center" style="height:160px;">
-                                <img src="assets/bolso-lonchera.png" alt="Lonchera Ejecutiva Avio" class="h-full w-auto object-contain">
+                                <img src="./bolso-lonchera.png" alt="Lonchera Ejecutiva Avio" class="h-full w-auto object-contain">
                             </div>
                             <div class="mb-3">
                                 <h4 class="font-bold text-gray-800 text-xl">Lonchera Ejecutiva</h4>
-                                <p class="text-sm text-gray-500">Almuerzo fresco + T¡ + Snack</p>
+                                <p class="text-sm text-gray-500">Almuerzo fresco + Té + Snack</p>
                             </div>
                             <div class="mt-auto flex justify-between items-center border-t border-gray-100 pt-4">
                                 <span class="font-bold text-avioPurple text-2xl">$5.50</span>
-                                <buttoñonclick="addToCart('ad2', 'Lonchera Ejecutiva', 5.50)" class="bg-gray-900 hover:bg-black text-white px-5 py-2 rounded-full font-bold shadow-lg flex items-center gap-2 transition-colors">A¡AñAñ ++</button>
+                                <button onclick="addToCart('ad2', 'Lonchera Ejecutiva', 5.50)" class="bg-gray-900 hover:bg-black text-white px-5 py-2 rounded-full font-bold shadow-lg flex items-center gap-2 transition-colors">Añadir +</button>
                             </div>
                         </div>
 
@@ -547,13 +547,13 @@
                             <div class="flex items-center gap-4 mb-4">
                                 <span class="text-5xl bg-gray-50 p-2 rounded-xl">?</span>
                                 <div>
-                                    <h4 class="font-bold text-gray-800 text-xl">Caf¡ Americano</h4>
+                                    <h4 class="font-bold text-gray-800 text-xl">Café Americano</h4>
                                     <p class="text-sm text-gray-500">Caliente, grano seleccionado</p>
                                 </div>
                             </div>
                             <div class="mt-auto flex justify-between items-center border-t border-gray-100 pt-4">
                                 <span class="font-bold text-avioPurple text-2xl">$1.50</span>
-                                <buttoñonclick="addToCart('ad3', 'Caf¡ Americano', 1.50)" class="bg-gray-900 hover:bg-black text-white px-5 py-2 rounded-full font-bold shadow-lg flex items-center gap-2 transition-colors">A¡AñAñ ++</button>
+                                <button onclick="addToCart('ad3', 'Café Americano', 1.50)" class="bg-gray-900 hover:bg-black text-white px-5 py-2 rounded-full font-bold shadow-lg flex items-center gap-2 transition-colors">Añadir +</button>
                             </div>
                         </div>
 
@@ -563,12 +563,12 @@
                                 <span class="text-5xl bg-gray-50 p-2 rounded-xl">🚀</span>
                                 <div>
                                     <h4 class="font-bold text-gray-800 text-xl">Bakery y Snacks</h4>
-                                    <p class="text-sm text-gray-500">Croissant, muffiño mix saludable</p>
+                                    <p class="text-sm text-gray-500">Croissant, muffin o mix saludable</p>
                                 </div>
                             </div>
                             <div class="mt-auto flex justify-between items-center border-t border-gray-100 pt-4">
                                 <span class="font-bold text-avioPurple text-2xl">$2.00</span>
-                                <buttoñonclick="addToCart('ad4', 'Snack Ejecutivo', 2.00)" class="bg-gray-900 hover:bg-black text-white px-5 py-2 rounded-full font-bold shadow-lg flex items-center gap-2 transition-colors">A¡AñAñ ++</button>
+                                <button onclick="addToCart('ad4', 'Snack Ejecutivo', 2.00)" class="bg-gray-900 hover:bg-black text-white px-5 py-2 rounded-full font-bold shadow-lg flex items-center gap-2 transition-colors">Añadir +</button>
                             </div>
                         </div>
                     </div>
@@ -599,7 +599,7 @@
                             <span class="text-avioYellow">energía para tu jornada.</span>
                         </h1>
                         <p class="text-xl text-white/90 font-medium max-w-lg mx-auto md:mx-0">
-                            Avio Executive: loncheras nutritivas, caf¡ premium y snacks pensados para que rindas al m¡ximo en tu día de trabajo o clases.
+                            Avio Executive: loncheras nutritivas, café premium y snacks pensados para que rindas al máximo en tu día de trabajo o clases.
                         </p>
                         <div class="flex flex-col sm:flex-row gap-4 justify-center md:justify-start pt-4">
                             <a href="#menu-ejecutivo" class="bg-avioYellow hover:bg-yellow-300 text-gray-900 px-8 py-4 rounded-full font-bold text-xl shadow-[0_6px_0_#ca8a04] hover:shadow-[0_4px_0_#ca8a04] hover:translate-y-1 transition-all text-center">
@@ -614,10 +614,10 @@
                     <div class="relative flex flex-col gap-4 items-center justify-center">
                         <div class="flex gap-6 items-end justify-center">
                             <div class="bg-white rounded-3xl shadow-2xl overflow-hidden border-4 border-avioYellow p-3" style="max-width:240px;">
-                                <img src="assets/bolso-lonchera.png" alt="Bolso Lonchera Ejecutiva Avio" class="w-full h-auto object-contain">
+                                <img src="./bolso-lonchera.png" alt="Bolso Lonchera Ejecutiva Avio" class="w-full h-auto object-contain">
                             </div>
                             <div class="bg-white rounded-3xl shadow-2xl overflow-hidden border-4 border-avioPurple p-3" style="max-width:200px;">
-                                <img src="assets/vaso-frappe.png" alt="Caf¡ Helado Frapp¡ Avio" class="w-full h-auto object-contain">
+                                <img src="./vaso-frappe.png" alt="Café Helado Frappé Avio" class="w-full h-auto object-contain">
                             </div>
                         </div>
                         <div class="bg-avioYellow text-gray-900 font-bold px-6 py-3 rounded-full shadow-xl text-lg border-4 border-white">
@@ -640,24 +640,24 @@
                 <div class="text-center mb-14">
                     <span class="inline-block bg-gray-900 text-avioYellow font-bold px-5 py-1 rounded-full text-sm mb-4 tracking-wider uppercase">menú Ejecutivo</span>
                     <h2 class="text-4xl md:text-5xl font-bold text-gray-900 mb-4">Elige tu combo ideal</h2>
-                    <p class="text-xl text-gray-600 max-w-2xl mx-auto">Loncheras nutritivas y bebidas premium dise¡adas para recargarte en tu jornada laboral o docente.</p>
+                    <p class="text-xl text-gray-600 max-w-2xl mx-auto">Loncheras nutritivas y bebidas premium diseñadas para recargarte en tu jornada laboral o docente.</p>
                 </div>
 
                 <div class="flex flex-col lg:flex-row gap-12 items-start">
                     <!-- Columna izquierda: im¡genes de los productos destacados -->
                     <div class="w-full lg:w-5/12 flex flex-col gap-6 sticky top-24">
                         <div class="bg-white rounded-[2rem] shadow-xl overflow-hidden border border-gray-100">
-                            <img src="assets/bolso-lonchera.png" alt="Lonchera Ejecutiva Avio" class="w-full h-auto object-contain p-4" style="max-height:280px;">
+                            <img src="./bolso-lonchera.png" alt="Lonchera Ejecutiva Avio" class="w-full h-auto object-contain p-4" style="max-height:280px;">
                             <div class="px-6 pb-5 text-center">
                                 <span class="font-bold text-gray-800 text-lg">Lonchera Ejecutiva Avio</span>
-                                <p class="text-sm text-gray-500 mt-1">Bolso reutilizable ¡ Almuerzo fresco ¡ T¡ ¡ Snack</p>
+                                <p class="text-sm text-gray-500 mt-1">Bolso reutilizable ¡ Almuerzo fresco ¡ Té ¡ Snack</p>
                             </div>
                         </div>
                         <div class="bg-white rounded-[2rem] shadow-xl overflow-hidden border border-gray-100">
-                            <img src="assets/vaso-frappe.png" alt="Caf¡ Helado / Frapp¡ Avio" class="w-full h-auto object-contain p-4" style="max-height:280px;">
+                            <img src="./vaso-frappe.png" alt="Café Helado / Frappé Avio" class="w-full h-auto object-contain p-4" style="max-height:280px;">
                             <div class="px-6 pb-5 text-center">
-                                <span class="font-bold text-gray-800 text-lg">Caf¡ Helado / Frapp¡ Avio</span>
-                                <p class="text-sm text-gray-500 mt-1">Estilo cafeter¡a ¡ Vaso grande ¡ Logo Avio</p>
+                                <span class="font-bold text-gray-800 text-lg">Café Helado / Frappé Avio</span>
+                                <p class="text-sm text-gray-500 mt-1">Estilo cafetería ¡ Vaso grande ¡ Logo Avio</p>
                             </div>
                         </div>
                     </div>
@@ -665,44 +665,44 @@
                     <!-- Columna derecha: cards de productos -->
                     <div class="w-full lg:w-7/12 grid grid-cols-1 sm:grid-cols-2 gap-6">
 
-                        <!-- Caf¡ Helado / Frapp¡ -->
+                        <!-- Café Helado / Frappé -->
                         <div class="bg-white p-5 rounded-2xl border border-gray-100 shadow-md flex flex-col hover:-translate-y-1 transition-transform">
                             <div class="mb-4 rounded-xl overflow-hidden bg-gray-50 flex items-center justify-center" style="height:180px;">
-                                <img src="assets/vaso-frappe.png" alt="Caf¡ Helado / Frapp¡ Avio" class="h-full w-auto object-contain">
+                                <img src="./vaso-frappe.png" alt="Café Helado / Frappé Avio" class="h-full w-auto object-contain">
                             </div>
-                            <h4 class="font-bold text-gray-800 text-xl mb-1">Caf¡ Helado / Frapp¡</h4>
-                            <p class="text-sm text-gray-500 mb-4">Estilo cafeter¡a, vaso grande con logo Avio</p>
+                            <h4 class="font-bold text-gray-800 text-xl mb-1">Café Helado / Frappé</h4>
+                            <p class="text-sm text-gray-500 mb-4">Estilo cafetería, vaso grande con logo Avio</p>
                             <div class="mt-auto flex justify-between items-center border-t border-gray-100 pt-4">
                                 <span class="font-bold text-avioPurple text-2xl">$3.50</span>
-                                <buttoñonclick="addToCart('ad1', 'Caf¡ Helado/Frapp¡', 3.50)" class="bg-gray-900 hover:bg-black text-white px-5 py-2 rounded-full font-bold shadow-lg flex items-center gap-2 transition-colors">A¡AñAñ ++</button>
+                                <button onclick="addToCart('ad1', 'Café Helado/Frappé', 3.50)" class="bg-gray-900 hover:bg-black text-white px-5 py-2 rounded-full font-bold shadow-lg flex items-center gap-2 transition-colors">Añadir +</button>
                             </div>
                         </div>
 
                         <!-- Lonchera Ejecutiva -->
                         <div class="bg-white p-5 rounded-2xl border border-gray-100 shadow-md flex flex-col hover:-translate-y-1 transition-transform">
                             <div class="mb-4 rounded-xl overflow-hidden bg-gray-50 flex items-center justify-center" style="height:180px;">
-                                <img src="assets/bolso-lonchera.png" alt="Lonchera Ejecutiva Avio" class="h-full w-auto object-contain">
+                                <img src="./bolso-lonchera.png" alt="Lonchera Ejecutiva Avio" class="h-full w-auto object-contain">
                             </div>
                             <h4 class="font-bold text-gray-800 text-xl mb-1">Lonchera Ejecutiva</h4>
-                            <p class="text-sm text-gray-500 mb-4">Almuerzo fresco + T¡ + Snack en bolso Avio</p>
+                            <p class="text-sm text-gray-500 mb-4">Almuerzo fresco + Té + Snack en bolso Avio</p>
                             <div class="mt-auto flex justify-between items-center border-t border-gray-100 pt-4">
                                 <span class="font-bold text-avioPurple text-2xl">$5.50</span>
-                                <buttoñonclick="addToCart('ad2', 'Lonchera Ejecutiva', 5.50)" class="bg-gray-900 hover:bg-black text-white px-5 py-2 rounded-full font-bold shadow-lg flex items-center gap-2 transition-colors">A¡AñAñ ++</button>
+                                <button onclick="addToCart('ad2', 'Lonchera Ejecutiva', 5.50)" class="bg-gray-900 hover:bg-black text-white px-5 py-2 rounded-full font-bold shadow-lg flex items-center gap-2 transition-colors">Añadir +</button>
                             </div>
                         </div>
 
-                        <!-- Caf¡ Americano -->
+                        <!-- Café Americano -->
                         <div class="bg-white p-6 rounded-2xl border border-gray-100 shadow-md flex flex-col hover:-translate-y-1 transition-transform">
                             <div class="flex items-center gap-4 mb-4">
                                 <span class="text-5xl bg-gray-50 p-3 rounded-xl">?</span>
                                 <div>
-                                    <h4 class="font-bold text-gray-800 text-xl">Caf¡ Americano</h4>
+                                    <h4 class="font-bold text-gray-800 text-xl">Café Americano</h4>
                                     <p class="text-sm text-gray-500">Caliente, grano seleccionado</p>
                                 </div>
                             </div>
                             <div class="mt-auto flex justify-between items-center border-t border-gray-100 pt-4">
                                 <span class="font-bold text-avioPurple text-2xl">$1.50</span>
-                                <buttoñonclick="addToCart('ad3', 'Caf¡ Americano', 1.50)" class="bg-gray-900 hover:bg-black text-white px-5 py-2 rounded-full font-bold shadow-lg flex items-center gap-2 transition-colors">A¡AñAñ ++</button>
+                                <button onclick="addToCart('ad3', 'Café Americano', 1.50)" class="bg-gray-900 hover:bg-black text-white px-5 py-2 rounded-full font-bold shadow-lg flex items-center gap-2 transition-colors">Añadir +</button>
                             </div>
                         </div>
 
@@ -712,28 +712,28 @@
                                 <span class="text-5xl bg-gray-50 p-3 rounded-xl">🚀</span>
                                 <div>
                                     <h4 class="font-bold text-gray-800 text-xl">Bakery y Snacks</h4>
-                                    <p class="text-sm text-gray-500">Croissant, muffiño mix saludable</p>
+                                    <p class="text-sm text-gray-500">Croissant, muffin o mix saludable</p>
                                 </div>
                             </div>
                             <div class="mt-auto flex justify-between items-center border-t border-gray-100 pt-4">
                                 <span class="font-bold text-avioPurple text-2xl">$2.00</span>
-                                <buttoñonclick="addToCart('ad4', 'Snack Ejecutivo', 2.00)" class="bg-gray-900 hover:bg-black text-white px-5 py-2 rounded-full font-bold shadow-lg flex items-center gap-2 transition-colors">A¡AñAñ ++</button>
+                                <button onclick="addToCart('ad4', 'Snack Ejecutivo', 2.00)" class="bg-gray-900 hover:bg-black text-white px-5 py-2 rounded-full font-bold shadow-lg flex items-center gap-2 transition-colors">Añadir +</button>
                             </div>
                         </div>
 
                         <!-- Bolsa Reutilizable (Opcional) -->
                         <div class="sm:col-span-2 bg-gradient-to-r from-avioPurple to-gray-900 p-6 rounded-2xl shadow-xl flex flex-col sm:flex-row items-center gap-6 border-2 border-avioYellow">
                             <div class="bg-white rounded-2xl overflow-hidden shadow-lg flex-shrink-0" style="width:120px;height:120px;">
-                                <img src="assets/bolso-lonchera.png" alt="Bolsa Reutilizable Avio" class="w-full h-full object-contain p-2">
+                                <img src="./bolso-lonchera.png" alt="Bolsa Reutilizable Avio" class="w-full h-full object-contain p-2">
                             </div>
                             <div class="text-white text-center sm:text-left flex-1">
                                 <span class="text-avioYellow text-xs font-bold uppercase tracking-wider">Opcional ¡ Accesorio</span>
                                 <h4 class="font-bold text-xl mt-1">Bolsa Reutilizable Avio</h4>
-                                <p class="text-white/80 text-sm mt-1">Bolso ecol¡gico con logo Avio. Perfecto para llevar tu lonchera a diario con estilo.</p>
+                                <p class="text-white/80 text-sm mt-1">Bolso ecológico con logo Avio. Perfecto para llevar tu lonchera a diario con estilo.</p>
                             </div>
                             <div class="flex flex-col items-center gap-3 flex-shrink-0">
                                 <span class="font-bold text-avioYellow text-3xl">+$2.00</span>
-                                <buttoñonclick="addToCart('ad5', 'Bolsa Reutilizable Avio', 2.00)" class="bg-avioYellow hover:bg-yellow-300 text-gray-900 px-6 py-2 rounded-full font-bold shadow-lg flex items-center gap-2 transition-colors whitespace-nowrap">A¡AñAñ ++</button>
+                                <button onclick="addToCart('ad5', 'Bolsa Reutilizable Avio', 2.00)" class="bg-avioYellow hover:bg-yellow-300 text-gray-900 px-6 py-2 rounded-full font-bold shadow-lg flex items-center gap-2 transition-colors whitespace-nowrap">Añadir +</button>
                             </div>
                         </div>
 
@@ -760,13 +760,13 @@
                 <div>
                     <div class="flex items-center gap-3 mb-4">
                         <div class="w-10 h-10 bg-white rounded-full p-1 overflow-hidden">
-                            <img src="assets/logo.png" alt="Avio Logo" class="w-full h-auto object-contain">
+                            <img src="./logo.png" alt="Avio Logo" class="w-full h-auto object-contain">
                         </div>
                         <span class="text-2xl font-bold">Avio</span>
                     </div>
                     <p class="text-avioPurpleLight text-white font-medium mb-4">
                         Loncheras Saludables en Tulcán.<br>
-                        ¡energía y buenos h¡bitos para su gran día!
+                        ¡energía y buenos hábitos para su gran día!
                     </p>
                 </div>
 
@@ -777,7 +777,7 @@
                         <li>¡ UE Bolívar</li>
                         <li>¡ UE Cristo Rey</li>
                         <li>¡ La Salle</li>
-                        <li>¡ Sagrado Coraz¡n de Jes¡s</li>
+                        <li>¡ Sagrado Corazón de Jesús</li>
                         <li>¡ UE Vicente</li>
                         <li>¡ UE Padua</li>
                         <li>¡ UE Consejo Provincial</li>
@@ -846,7 +846,7 @@
         const dailyMenus = {
             lunes: {
                 title: "Menú del Lunes",
-                img: "assets/personaje-lunes.png",
+                img: "./personaje-lunes.png",
                 items: [
                     { icon: "🎉", name: "Té Helado" },
                     { icon: "🎉", name: "Galletas Ducales" },
@@ -856,7 +856,7 @@
             },
             martes: {
                 title: "menú del Martes",
-                img: "assets/personaje-martes.png",
+                img: "./personaje-martes.png",
                 items: [
                     { icon: "🎉", name: "Jugo de Fresa" },
                     { icon: "🎉", name: "Ponkey" },
@@ -866,17 +866,17 @@
             },
             miercoles: {
                 title: "menú del Miércoles",
-                img: "assets/personaje-miercoles.png",
+                img: "./personaje-miercoles.png",
                 items: [
                     { icon: "🎉", name: "Yogurt del Día" },
-                    { icon: "🎉", name: "Galletas M¡as" },
+                    { icon: "🎉", name: "Galletas Mías" },
                     { icon: "🎉", name: "Sandía en Cubitos" },
                     { icon: "🎉", name: "Mix de Snack" }
                 ]
             },
             jueves: {
                 title: "menú del Jueves",
-                img: "assets/personaje-jueves.png",
+                img: "./personaje-jueves.png",
                 items: [
                     { icon: "🎉", name: "Jugo de Babaco" },
                     { icon: "🎉", name: "Galleta con Chispitas" },
@@ -886,7 +886,7 @@
             },
             viernes: {
                 title: "menú del Viernes (Especial)",
-                img: "assets/personaje-viernes.png",
+                img: "./personaje-viernes.png",
                 items: [
                     { icon: "🎉", name: "Bebida Sorpresa" },
                     { icon: "?", name: "Snack Especial" },
@@ -959,8 +959,8 @@
                 { id: 'b3', name: 'Yogurt', price: 0.25, icon: '🎉' },
                 { id: 'b4', name: 'Gelatina', price: 0.25, icon: '🎉' },
                 { id: 'b5', name: 'Jugo de Babaco', price: 0.25, icon: '🎉' },
-                { id: 'b6', name: 'T¡ de Lim¡n', price: 0.25, icon: '🎉' },
-                { id: 'b7', name: 'Jugo de Guan¡bana', price: 0.25, icon: '🎉' }
+                { id: 'b6', name: 'Té de Limón', price: 0.25, icon: '🎉' },
+                { id: 'b7', name: 'Jugo de Guanábana', price: 0.25, icon: '🎉' }
             ],
             fruta: [
                 { id: 'f1', name: 'Manzana', price: 0.25, icon: '🎉' },
@@ -968,7 +968,7 @@
                 { id: 'f3', name: 'Fresas', price: 0.25, icon: '🎉' },
                 { id: 'f4', name: 'Sandía', price: 0.25, icon: '🎉' },
                 { id: 'f5', name: 'Mandarina', price: 0.25, icon: '🎉' },
-                { id: 'f6', name: 'Pi¡a Picada', price: 0.25, icon: '🎉' },
+                { id: 'f6', name: 'Piña Picada', price: 0.25, icon: '🎉' },
                 { id: 'f7', name: 'Pera Picada', price: 0.25, icon: '🎉' }
             ]
         };
@@ -979,7 +979,7 @@
         let cart = {};
 
         // Abrir Modal de Categoría
-        functioñopenCategoryModal(categoryId, title) {
+        function openCategoryModal(categoryId, title) {
             document.getElementById('categoryModalTitle').innerText = title;
             const listDiv = document.getElementById('categoryProductsList');
             listDiv.innerHTML = '';
@@ -997,8 +997,8 @@
                                 <span class="text-avioGreen font-bold">$${p.price.toFixed(2)}</span>
                             </div>
                         </div>
-                        <buttoñonclick="addToCart('${p.id}', '${p.name}', ${p.price})" class="bg-avioPurple hover:bg-avioPurpleLight text-white px-5 py-2 rounded-full font-bold shadow-md transition transform hover:scale-105 active:scale-95 flex items-center gap-2">
-                            A¡Añ +<span class="text-xl leading-none">+</span>
+                        <button onclick="addToCart('${p.id}', '${p.name}', ${p.price})" class="bg-avioPurple hover:bg-avioPurpleLight text-white px-5 py-2 rounded-full font-bold shadow-md transition transform hover:scale-105 active:scale-95 flex items-center gap-2">
+                            Añadir <span class="text-xl leading-none">+</span>
                         </button>
                     </div>
                 `;
@@ -1020,7 +1020,7 @@
             updateCartUI();
             
             // Peque¡a animaci¡n visual en el bot¡n del carrito
-            const cartBtn = document.querySelector('buttoñonclick="toggleCart()"]');
+            const cartBtn = document.querySelector('button[onclick="toggleCart()"]');
             cartBtn.classList.add('scale-125', 'bg-avioYellow');
             setTimeout(() => {
                 cartBtn.classList.remove('scale-125', 'bg-avioYellow');
@@ -1081,9 +1081,9 @@
                                 <span class="text-avioGreen font-bold">$${(item.price * item.qty).toFixed(2)}</span>
                             </div>
                             <div class="flex items-center gap-3 bg-gray-50 border border-gray-200 rounded-full px-1 py-1">
-                                <buttoñonclick="updateItemQty('${id}', -1)" class="w-8 h-8 flex items-center justify-center font-bold text-gray-500 hover:text-white hover:bg-red-400 rounded-full transition-colors">-</button>
+                                <button onclick="updateItemQty('${id}', -1)" class="w-8 h-8 flex items-center justify-center font-bold text-gray-500 hover:text-white hover:bg-red-400 rounded-full transition-colors">-</button>
                                 <span class="font-bold w-4 text-center">${item.qty}</span>
-                                <buttoñonclick="updateItemQty('${id}', 1)" class="w-8 h-8 flex items-center justify-center font-bold text-gray-500 hover:text-white hover:bg-green-400 rounded-full transition-colors">+</button>
+                                <button onclick="updateItemQty('${id}', 1)" class="w-8 h-8 flex items-center justify-center font-bold text-gray-500 hover:text-white hover:bg-green-400 rounded-full transition-colors">+</button>
                             </div>
                         </div>
                     `;
@@ -1097,22 +1097,22 @@
         function checkoutWhatsApp() {
             const itemKeys = Object.keys(cart);
             if (itemKeys.length === 0) {
-                alert('¡Tu carrito est¡ vac¡o! Agrega algunos productos deliciosos primero.');
+                alert('¡Tu carrito está vacío! Agrega algunos productos deliciosos primero.');
                 return;
             }
             
-            let msg = "Hola Avio, quiero realizar el siguiente pedido: %0A%0A";
+            let msg = "Hola Avio, quiero realizar el siguiente pedido: \n\n";
             let total = 0;
             
             itemKeys.forEach(id => {
                 const item = cart[id];
                 total += item.price * item.qty;
-                msg += `? ${item.qty}x ${item.name} ($${(item.price * item.qty).toFixed(2)})%0A`;
+                msg += `? ${item.qty}x ${item.name} ($${(item.price * item.qty).toFixed(2)})\n`;
             });
             
-            msg += `%0A🎉 *Total a pagar: $${total.toFixed(2)}*`;
+            msg += `\n🎉 *Total a pagar: $${total.toFixed(2)}*`;
             
-            const waLink = `https://wa.me/593980130460?text=${msg}`;
+            const waLink = `https://wa.me/593980130460?text=${encodeURIComponent(msg)}`;
             window.open(waLink, '_blank');
         }
 
